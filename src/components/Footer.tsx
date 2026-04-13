@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 const Footer = () => {
@@ -17,16 +17,13 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            {[Instagram, Twitter, Youtube].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-                aria-label="Social media"
-              >
-                <Icon size={18} />
-              </a>
-            ))}
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label="Instagram"
+            >
+              <Instagram size={18} />
+            </a>
           </div>
         </div>
       </div>
