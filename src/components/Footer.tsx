@@ -1,4 +1,5 @@
 import { Instagram, Twitter, Youtube } from "lucide-react";
+import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 const Footer = () => {
   return (
@@ -6,7 +7,10 @@ const Footer = () => {
       <div className="relative z-10 container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <p className="font-heading text-xl font-bold tracking-tighter text-foreground uppercase">VOXFIRE</p>
+            <div className="flex items-center gap-3">
+              <img src={voxfireLogo} alt="VoxFire" className="h-8 w-8 object-cover rounded-none" />
+              <p className="font-heading text-xl font-bold tracking-tighter text-foreground uppercase">VOXFIRE</p>
+            </div>
             <p className="font-body text-xs text-muted-foreground mt-1">
               © {new Date().getFullYear()} VoxFire Odisha. All rights reserved.
             </p>

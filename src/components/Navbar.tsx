@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 const navLinks = [
   { label: "About Us", href: "#about" },
@@ -35,8 +36,9 @@ const Navbar = () => {
         transition={{ duration: 0.5, delay: 1.5 }}
       >
         <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="font-heading text-2xl font-bold tracking-tighter text-foreground uppercase">
-            VOXFIRE
+          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center gap-3">
+            <img src={voxfireLogo} alt="VoxFire" className="h-8 w-8 object-cover rounded-none" />
+            <span className="font-heading text-2xl font-bold tracking-tighter text-foreground uppercase">VOXFIRE</span>
           </button>
 
           {/* Desktop */}
