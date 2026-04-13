@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 interface LoadingScreenProps {
   isLoading: boolean;
@@ -14,12 +15,20 @@ const LoadingScreen = ({ isLoading }: LoadingScreenProps) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="relative z-10 flex flex-col items-center">
+            <motion.img
+              src={voxfireLogo}
+              alt="VoxFire"
+              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-none mb-6"
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            />
             <motion.div className="overflow-hidden">
               <motion.h1
                 className="font-heading text-6xl md:text-8xl font-bold tracking-tighter text-foreground uppercase"
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               >
                 VOXFIRE
               </motion.h1>
