@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 const Footer = () => {
