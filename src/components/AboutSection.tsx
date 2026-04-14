@@ -45,7 +45,7 @@ const AboutSection = () => {
           >
             {[
               { num: "1+", label: "Events" },
-              { num: "10K+", label: "Attendees" },
+              { num: "10K+", label: "Expected Attendees" },
               { num: "2025", label: "Est." },
             ].map((stat) => (
               <div key={stat.label} className="bg-background p-6 md:p-8 text-center">
