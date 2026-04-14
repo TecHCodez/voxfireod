@@ -69,7 +69,7 @@ const UpcomingSection = () => {
             />
 
             <p className="font-body text-sm text-muted-foreground mt-6 max-w-lg">
-              Details coming soon. Stay tuned for the biggest live concert experience in Odisha.
+              Details coming soon. Stay tuned for the biggest live concert experience in Odisha. Follow our <a href="https://instagram.com/voxfire.od" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">Instagram Page</a> for updates
             </p>
           </div>
         </motion.div>
