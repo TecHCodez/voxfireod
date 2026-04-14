@@ -68,9 +68,19 @@ const UpcomingSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             />
 
-            <p className="font-body text-sm text-muted-foreground mt-6 max-w-lg">
-              Details coming soon. Stay tuned for the biggest live concert experience in Odisha. Follow our <a href="https://instagram.com/voxfire.od" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">Instagram Page</a> for updates
-            </p>
+            <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <a
+                href="https://bookmyshow.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
+              >
+                Buy Tickets
+              </a>
+              <p className="font-body text-sm text-muted-foreground max-w-lg">
+                Details coming soon. Stay tuned for the biggest live concert experience in Odisha. Follow our <a href="https://instagram.com/voxfire.od" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">Instagram Page</a> for updates
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
