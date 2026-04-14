@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const events = [
-  { name: "Sonic Pulse", year: "2025", caption: "A high-energy electronic night with 5000+ attendees." },
-  { name: "Echoes Live", year: "2025", caption: "An intimate acoustic concert under the open sky." },
-  { name: "Bass Nation", year: "2024", caption: "Bhubaneswar's largest bass music festival." },
-  { name: "Voltage", year: "2024", caption: "A multi-genre music showcase with national artists." },
+  { name: "Coming Soon", year: "2025", caption: "A high-energy electronic night with 5000+ attendees." },
+  { name: "Coming Soon", year: "2025", caption: "An intimate acoustic concert under the open sky." },
+  { name: "Coming Soon", year: "2024", caption: "Bhubaneswar's largest bass music festival." },
+  { name: "Coming Soon", year: "2024", caption: "A multi-genre music showcase with national artists." },
 ];
 
 const PreviousEventsSection = () => {
