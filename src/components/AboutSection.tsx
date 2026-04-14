@@ -44,9 +44,9 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             {[
-              { num: "50+", label: "Events" },
-              { num: "100K+", label: "Attendees" },
-              { num: "2024", label: "Est." },
+              { num: "1+", label: "Events" },
+              { num: "10K+", label: "Attendees" },
+              { num: "2025", label: "Est." },
             ].map((stat) => (
               <div key={stat.label} className="bg-background p-6 md:p-8 text-center">
                 <p className="font-heading text-3xl md:text-4xl font-bold text-foreground">{stat.num}</p>
