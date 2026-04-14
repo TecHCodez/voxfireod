@@ -70,7 +70,7 @@ const UpcomingSection = () => {
 
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <a
-                href="https://bookmyshow.in"
+                href="https://bookmyshow.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
