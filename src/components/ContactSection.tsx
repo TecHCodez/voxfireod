@@ -35,14 +35,14 @@ const ContactSection = () => {
             <Mail size={18} className="text-muted-foreground mt-1 shrink-0" />
             <div>
               <p className="font-body text-xs tracking-[0.2em] text-muted-foreground uppercase mb-1">Email</p>
-              <p className="font-body text-foreground">hello@voxfireodisha.com</p>
+              <p className="font-body text-foreground">hello@voxfireod.in</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <Phone size={18} className="text-muted-foreground mt-1 shrink-0" />
             <div>
-              <p className="font-body text-xs tracking-[0.2em] text-muted-foreground uppercase mb-1">Phone</p>
-              <p className="font-body text-foreground">+91 98765 43210</p>
+              <p className="font-body text-xs tracking-[0.2em] text-muted-foreground uppercase mb-1">Phone (Kumar Pratyush)</p>
+              <p className="font-body text-foreground">+91 63728 27677</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
