@@ -52,7 +52,7 @@ const UpcomingSection = () => {
             <div className="mt-8 flex flex-col sm:flex-row gap-6 text-muted-foreground">
               <div className="flex items-center gap-2 font-body text-sm tracking-wide">
                 <Calendar size={14} />
-                <span>Friday, 11 July 2026</span>
+                <span>Saturday, 11 July 2026</span>
               </div>
               <div className="flex items-center gap-2 font-body text-sm tracking-wide">
                 <MapPin size={14} />
