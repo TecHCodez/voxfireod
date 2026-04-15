@@ -94,6 +94,14 @@ const Navbar = () => {
                 {link.label}
               </motion.button>
             ))}
+            <a
+              href="https://bookmyshow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors mt-4"
+            >
+              Buy Tickets
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
