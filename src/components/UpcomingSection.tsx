@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Music } from "lucide-react";
+import { TICKETS_ENABLED, TICKETS_URL } from "@/config/tickets";
 
 const UpcomingSection = () => {
   return (
@@ -69,14 +70,16 @@ const UpcomingSection = () => {
             />
 
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-              <a
-                href="https://bookmyshow.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
-              >
-                Buy Tickets
-              </a>
+              {TICKETS_ENABLED && (
+                <a
+                  href={TICKETS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
+                >
+                  Buy Tickets
+                </a>
+              )}
               <p className="font-body text-sm text-muted-foreground max-w-lg">
                 Details coming soon. Stay tuned for the biggest live concert experience in Odisha. Follow our <a href="https://instagram.com/voxfire.od" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">Instagram Page</a> for updates
               </p>
