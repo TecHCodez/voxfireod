@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import voxfireLogo from "@/assets/voxfire-logo.jpg";
+import { TICKETS_ENABLED, TICKETS_URL } from "@/config/tickets";
 
 const navLinks = [
   { label: "About Us", href: "#about" },
@@ -52,14 +53,16 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
-            <a
-              href="https://bookmyshow.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
-            >
-              Buy Tickets
-            </a>
+            {TICKETS_ENABLED && (
+              <a
+                href={TICKETS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
+              >
+                Buy Tickets
+              </a>
+            )}
           </div>
 
           {/* Mobile toggle */}
@@ -94,14 +97,16 @@ const Navbar = () => {
                 {link.label}
               </motion.button>
             ))}
-            <a
-              href="https://bookmyshow.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors mt-4"
-            >
-              Buy Tickets
-            </a>
+            {TICKETS_ENABLED && (
+              <a
+                href={TICKETS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors mt-4"
+              >
+                Buy Tickets
+              </a>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
