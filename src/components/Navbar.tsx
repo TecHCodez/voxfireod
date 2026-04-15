@@ -56,7 +56,7 @@ const Navbar = () => {
               href="https://bookmyshow.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-all duration-300 shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_20px_rgba(255,255,255,0.35)] hover:scale-105"
             >
               Buy Tickets
             </a>
